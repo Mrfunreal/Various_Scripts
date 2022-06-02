@@ -1,8 +1,8 @@
-: This FFMPEG script can scale video files.
-: IT ASSUMES EVERY VIDEO FILE TO BE IN 3840x2160 RESOLUTION!
-: IF YOU WANT TO MAKE THIS WORK FOR YOUR OWN SCREEN RESOLUTION YOU MUST MANUALLY CHANGE ALL SETTINGS!!
-: Just drag and drop a video onto this bat and pick your choices.
-: It first asks for Framerate you want, then asks for resolution.
+:: This FFMPEG script can scale video files.
+:: IT ASSUMES EVERY VIDEO FILE TO BE IN 3840x2160 RESOLUTION!
+:: IF YOU WANT TO MAKE THIS WORK FOR YOUR OWN SCREEN RESOLUTION YOU MUST MANUALLY CHANGE ALL SETTINGS!!
+:: Just drag and drop a video onto this bat and pick your choices.
+:: It first asks for Framerate you want, then asks for resolution.
 
 @echo off
 color 0a
