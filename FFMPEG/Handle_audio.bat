@@ -1,4 +1,5 @@
-:This FFMPEG script can rip the audio from a video, mute the audio in a video, and also separate audio and video into two separate files.
+: This FFMPEG script can rip the audio from a video, mute the audio in a video, and also separate audio and video into two separate files.
+: Just drag and drop a video onto this bat and pick your choices.
 
 @echo off
 color 0a
