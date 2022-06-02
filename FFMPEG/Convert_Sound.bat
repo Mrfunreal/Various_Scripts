@@ -1,5 +1,5 @@
-: This FFMPEG script can convert audio to MP3 or WAV
-: Just drag and drop a video onto this bat and pick your choices.
+:: This FFMPEG script can convert audio to MP3 or WAV
+:: Just drag and drop a video onto this bat and pick your choices.
 @echo off
 color 0a
 
