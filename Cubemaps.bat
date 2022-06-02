@@ -1,3 +1,5 @@
+   ::This bat file extracts cubemap files from Source 1 Engine BSP map files.
+   
    @echo off
     ::Base settings of where the game and its bin folder is
     SET Binpath=D:\programme\steam\steamapps\common\left 4 dead 2\bin
