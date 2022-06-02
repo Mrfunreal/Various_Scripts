@@ -4,7 +4,7 @@
 # 2. change the vpk_path to whatever your game uses.
 # 3. Run this Python script. 
 #  - It will read all folders defined in target_folders and look for all files defined in file_types.
-#  - Once all files are found, i will create a multi chunk VPK file setup.
+#  - Once all files are found, it will create a multi chunk VPK file setup.
 #  - Consecutive uses will delete all existing VPK files, because without doing so, the multi chunk system breaks because of stale files in the _000.vpk
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #What folders to look for, and pack into the pak01 vpk set.
