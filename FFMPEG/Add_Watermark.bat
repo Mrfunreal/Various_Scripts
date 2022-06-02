@@ -2,8 +2,8 @@
 :: Just drag and drop a video onto this bat and pick your choices.
 
 :: DEFINE THE WATERMARK IMAGES HERE
-set 2k_watermark=G:/Pictures/Modding/Watermark_2k.png
-set 4k_watermark=G:/Pictures/Modding/Watermark_4k.png
+set watermark_2k=G:/Pictures/Modding/Watermark_2k.png
+set watermark_4k=G:/Pictures/Modding/Watermark_4k.png
 
 @echo off
 color 0a
@@ -32,11 +32,11 @@ if "%op%"=="2" GOTO 4k
 if "%op%"=="1" GOTO 2k
 
 :2k
-ffmpeg.exe -i %1 -i "%2k_watermark%" -filter_complex "overlay=0:0" "%~dpn1_watermark.mp4"
+ffmpeg.exe -i %1 -i "%watermark_2k%" -filter_complex "overlay=0:0" "%~dpn1_watermark.mp4"
 goto exit
 
 :4k
-ffmpeg.exe -i %1 -i "%4k_watermark%" -filter_complex "overlay=0:0" "%~dpn1_watermark.mp4"
+ffmpeg.exe -i %1 -i "%watermark_4k%" -filter_complex "overlay=0:0" "%~dpn1_watermark.mp4"
 goto exit
 
 :exit
