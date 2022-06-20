@@ -1,0 +1,159 @@
+# This set of lines got into your ..\Trackmania\NadeoImporterMaterialLib.txt file
+# These lines add the specific materials required to getthe Checkpoint, Finale and Multiplap Timers (Chronos) to work.
+
+# The material names are pretty much named after the number they should be used on.
+# Meaning the 10 minute number should use ChronoCheckpoint_10_00_00, ChronoFinish_10_00_00 or  Chrono_10_00_00, depending on what you want to use.
+
+# To poperly use this, first uvmap the entire rest of the chrono texture, being the TM logo, Arrows, and the colons (:) between the numbers.
+# Then give every number its own face assigned to the proper material.
+# The UVMaps of each single number should cover the entire texture, so the top left corner of the uvmap must be in the top most left position you can use in the texture
+# It will look weird in blender, but correct ingame.
+
+#(-------------------- EXTRA CHRONOS -------------------------)					
+		DMaterial(ChronoCheckpoint_10_00_00) 
+		DLinkFull    (Media\Material\ChronoCheckpoint-10-00-00)
+		DSurfaceId	(NotCollidable)
+		DGameplayId	(None)
+		DUvLayer	(BaseMaterial	, 0)
+		DUvLayer	(Lightmap		, 1)
+
+		DMaterial(ChronoCheckpoint_01_00_00) 
+		DLinkFull    (Media\Material\ChronoCheckpoint-01-00-00)
+		DSurfaceId	(NotCollidable)
+		DGameplayId	(None)
+		DUvLayer	(BaseMaterial	, 0)
+		DUvLayer	(Lightmap		, 1)
+
+		DMaterial(ChronoCheckpoint_00_10_00) 
+		DLinkFull    (Media\Material\ChronoCheckpoint-00-10-00)
+		DSurfaceId	(NotCollidable)
+		DGameplayId	(None)
+		DUvLayer	(BaseMaterial	, 0)
+		DUvLayer	(Lightmap		, 1)
+
+		DMaterial(ChronoCheckpoint_00_01_00) 
+		DLinkFull    (Media\Material\ChronoCheckpoint-00-01-00)
+		DSurfaceId	(NotCollidable)
+		DGameplayId	(None)
+		DUvLayer	(BaseMaterial	, 0)
+		DUvLayer	(Lightmap		, 1)
+
+		DMaterial(ChronoCheckpoint_00_00_10) 
+		DLinkFull    (Media\Material\ChronoCheckpoint-00-00-10)
+		DSurfaceId	(NotCollidable)
+		DGameplayId	(None)
+		DUvLayer	(BaseMaterial	, 0)
+		DUvLayer	(Lightmap		, 1)
+
+		DMaterial(ChronoCheckpoint_00_00_01) 
+		DLinkFull    (Media\Material\ChronoCheckpoint-00-00-01)
+		DSurfaceId	(NotCollidable)
+		DGameplayId	(None)
+		DUvLayer	(BaseMaterial	, 0)
+		DUvLayer	(Lightmap		, 1)
+
+		DMaterial(ChronoCheckpoint_00_00_001) 
+		DLinkFull    (Media\Material\ChronoCheckpoint-00-00-001)
+		DSurfaceId	(NotCollidable)
+		DGameplayId	(None)
+		DUvLayer	(BaseMaterial	, 0)
+		DUvLayer	(Lightmap		, 1)
+
+		DMaterial(ChronoFinish_10_00_00) 
+		DLinkFull    (Media\Material\ChronoFinish-10-00-00)
+		DSurfaceId	(NotCollidable)
+		DGameplayId	(None)
+		DUvLayer	(BaseMaterial	, 0)
+		DUvLayer	(Lightmap		, 1)
+
+		DMaterial(ChronoFinish_01_00_00) 
+		DLinkFull    (Media\Material\ChronoFinish-01-00-00)
+		DSurfaceId	(NotCollidable)
+		DGameplayId	(None)
+		DUvLayer	(BaseMaterial	, 0)
+		DUvLayer	(Lightmap		, 1)
+
+		DMaterial(ChronoFinish_00_10_00) 
+		DLinkFull    (Media\Material\ChronoFinish-00-10-00)
+		DSurfaceId	(NotCollidable)
+		DGameplayId	(None)
+		DUvLayer	(BaseMaterial	, 0)
+		DUvLayer	(Lightmap		, 1)
+
+		DMaterial(ChronoFinish_00_01_00) 
+		DLinkFull    (Media\Material\ChronoFinish-00-01-00)
+		DSurfaceId	(NotCollidable)
+		DGameplayId	(None)
+		DUvLayer	(BaseMaterial	, 0)
+		DUvLayer	(Lightmap		, 1)
+
+		DMaterial(ChronoFinish_00_00_10) 
+		DLinkFull    (Media\Material\ChronoFinish-00-00-10)
+		DSurfaceId	(NotCollidable)
+		DGameplayId	(None)
+		DUvLayer	(BaseMaterial	, 0)
+		DUvLayer	(Lightmap		, 1)
+
+		DMaterial(ChronoFinish_00_00_01) 
+		DLinkFull    (Media\Material\ChronoFinish-00-00-01)
+		DSurfaceId	(NotCollidable)
+		DGameplayId	(None)
+		DUvLayer	(BaseMaterial	, 0)
+		DUvLayer	(Lightmap		, 1)
+
+		DMaterial(ChronoFinish_00_00_001) 
+		DLinkFull    (Media\Material\ChronoFinish-00-00-001)
+		DSurfaceId	(NotCollidable)
+		DGameplayId	(None)
+		DUvLayer	(BaseMaterial	, 0)
+		DUvLayer	(Lightmap		, 1)
+
+		DMaterial(Chrono_10_00_00) 
+		DLinkFull    (Media\Material\Chrono-10-00-00)
+		DSurfaceId	(NotCollidable)
+		DGameplayId	(None)
+		DUvLayer	(BaseMaterial	, 0)
+		DUvLayer	(Lightmap		, 1)
+
+		DMaterial(Chrono_01_00_00) 
+		DLinkFull    (Media\Material\Chrono-01-00-00)
+		DSurfaceId	(NotCollidable)
+		DGameplayId	(None)
+		DUvLayer	(BaseMaterial	, 0)
+		DUvLayer	(Lightmap		, 1)
+
+		DMaterial(Chrono_00_10_00) 
+		DLinkFull    (Media\Material\Chrono-00-10-00)
+		DSurfaceId	(NotCollidable)
+		DGameplayId	(None)
+		DUvLayer	(BaseMaterial	, 0)
+		DUvLayer	(Lightmap		, 1)
+
+		DMaterial(Chrono_00_01_00) 
+		DLinkFull    (Media\Material\Chrono-00-01-00)
+		DSurfaceId	(NotCollidable)
+		DGameplayId	(None)
+		DUvLayer	(BaseMaterial	, 0)
+		DUvLayer	(Lightmap		, 1)
+
+		DMaterial(Chrono_00_00_10) 
+		DLinkFull    (Media\Material\Chrono-00-00-10)
+		DSurfaceId	(NotCollidable)
+		DGameplayId	(None)
+		DUvLayer	(BaseMaterial	, 0)
+		DUvLayer	(Lightmap		, 1)
+
+		DMaterial(Chrono_00_00_01) 
+		DLinkFull    (Media\Material\Chrono-00-00-01)
+		DSurfaceId	(NotCollidable)
+		DGameplayId	(None)
+		DUvLayer	(BaseMaterial	, 0)
+		DUvLayer	(Lightmap		, 1)
+
+		DMaterial(Chrono_00_00_001) 
+		DLinkFull    (Media\Material\Chrono-00-00-001)
+		DSurfaceId	(NotCollidable)
+		DGameplayId	(None)
+		DUvLayer	(BaseMaterial	, 0)
+		DUvLayer	(Lightmap		, 1)
+		
