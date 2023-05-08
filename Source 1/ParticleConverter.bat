@@ -18,11 +18,11 @@ echo.
 echo You must use the new game's DMXConvert to turn the particle to raw text file. (DMX/PCF Keyvalues2)
 echo Once that is done, the old game's DMXConvert turns that raw text into the desired Binary and PCF version.
 echo.
-echo [91mBefore you can convert anything:[0m
+echo Before you can convert anything:
 echo open this bat file in a notepad and set the "dmxconv_new" and "dmxconv_old" values.
 echo.
 echo Simply drag and drop your particle onto this bat file. It will convert to Keyvalues 2, wait five seconds and then convert to Binary 2 PCF 1
-echo [91m it will close automatically.[95m
+echo it will close automatically.
 pause>nul
 
 ::Don't change anything below here
