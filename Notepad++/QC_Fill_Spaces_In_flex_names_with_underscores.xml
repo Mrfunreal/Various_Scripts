@@ -19,12 +19,12 @@ Run this macro on that file and your spaces in flex names will be swapped to und
 
 Note:
 Effectively, the actual flow of this macro is, in order:
-replace " " with "_"
-replace "_frame_" with " frame "
-replace "flex_" with "flex "
-Replace "flexcontroller_" with "flexcontroller "
-replace "_range_0_1_" with " range 0 1 "
-replace "_=_" with " = "
+replace " " (space)		with "_"
+replace "_frame_" 		with " frame "
+replace "flex_" 		with "flex "
+Replace "flexcontroller_"	with "flexcontroller "
+replace "_range_0_1_" 		with " range 0 1 "
+replace "_=_" 		        with " = "
 
 Extra note:
 Some models (especially anime) have flexes that used weird characters that the decompiler doesn't handle well so some flexes are called ?, ??, and ???.
