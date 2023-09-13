@@ -1,0 +1,72 @@
+<!--
+This is a macro that, when used, replaces all the spaces in a source engine flex block with uderscores.
+Sometimes  models decompile with spaces in the flex lines, which won't recompile. So this is required.
+
+Install:
+Copy the entire macro below the into %AppData%\Notepad++ in a file called shortcuts.xml.
+Scroll down to the end where you can see:
+
+        </Macro>
+    </Macros>
+
+And paste it right between the two lines, effectively adding this macro.
+
+Usage:
+When in a QC, copy the entire content of the flexfile bracket into a new empty file.
+Only the content of the bracket, not the title.
+Which, for the slow ones, means the first "flex" line all the way down to where the last %xxx = xxx line is.
+Run this macro on that file and your spaces in flex names will be swapped to underscores.
+
+Note:
+Effectively, the actual flow of this macro is, in order:
+replace " " with "_"
+replace "_frame_" with " frame "
+replace "flex_" with "flex "
+Replace "flexcontroller_" with "flexcontroller "
+replace "_range_0_1_" with " range 0 1 "
+replace "_=_" with " = "
+
+Extra note:
+Some models (especially anime) have flexes that used weird characters that the decompiler doesn't handle well so some flexes are called ?, ??, and ???.
+Some other flexes may have symbols in it like <, > or other non alphanumerical digits.
+the flexes MUST ONLY contain alpha numerical digits. Replace anything that is not a-z and 0-1!
+
+-->
+        <Macro name="QC - Fill flex name spaces with _" Ctrl="no" Alt="no" Shift="no" Key="0">
+            <Action type="3" message="1700" wParam="0" lParam="0" sParam="" />
+            <Action type="3" message="1601" wParam="0" lParam="0" sParam=" " />
+            <Action type="3" message="1625" wParam="0" lParam="1" sParam="" />
+            <Action type="3" message="1602" wParam="0" lParam="0" sParam="_" />
+            <Action type="3" message="1702" wParam="0" lParam="768" sParam="" />
+            <Action type="3" message="1701" wParam="0" lParam="1609" sParam="" />
+            <Action type="3" message="1700" wParam="0" lParam="0" sParam="" />
+            <Action type="3" message="1601" wParam="0" lParam="0" sParam="_frame_" />
+            <Action type="3" message="1625" wParam="0" lParam="1" sParam="" />
+            <Action type="3" message="1602" wParam="0" lParam="0" sParam=" frame " />
+            <Action type="3" message="1702" wParam="0" lParam="768" sParam="" />
+            <Action type="3" message="1701" wParam="0" lParam="1609" sParam="" />
+            <Action type="3" message="1700" wParam="0" lParam="0" sParam="" />
+            <Action type="3" message="1601" wParam="0" lParam="0" sParam="flex_" />
+            <Action type="3" message="1625" wParam="0" lParam="1" sParam="" />
+            <Action type="3" message="1602" wParam="0" lParam="0" sParam="flex " />
+            <Action type="3" message="1702" wParam="0" lParam="768" sParam="" />
+            <Action type="3" message="1701" wParam="0" lParam="1609" sParam="" />
+            <Action type="3" message="1700" wParam="0" lParam="0" sParam="" />
+            <Action type="3" message="1601" wParam="0" lParam="0" sParam="flexcontroller_" />
+            <Action type="3" message="1625" wParam="0" lParam="1" sParam="" />
+            <Action type="3" message="1602" wParam="0" lParam="0" sParam="flexcontroller " />
+            <Action type="3" message="1702" wParam="0" lParam="768" sParam="" />
+            <Action type="3" message="1701" wParam="0" lParam="1609" sParam="" />
+            <Action type="3" message="1700" wParam="0" lParam="0" sParam="" />
+            <Action type="3" message="1601" wParam="0" lParam="0" sParam="_range_0_1_" />
+            <Action type="3" message="1625" wParam="0" lParam="1" sParam="" />
+            <Action type="3" message="1602" wParam="0" lParam="0" sParam=" range 0 1 " />
+            <Action type="3" message="1702" wParam="0" lParam="768" sParam="" />
+            <Action type="3" message="1701" wParam="0" lParam="1609" sParam="" />
+            <Action type="3" message="1700" wParam="0" lParam="0" sParam="" />
+            <Action type="3" message="1601" wParam="0" lParam="0" sParam="_=_" />
+            <Action type="3" message="1625" wParam="0" lParam="1" sParam="" />
+            <Action type="3" message="1602" wParam="0" lParam="0" sParam=" = " />
+            <Action type="3" message="1702" wParam="0" lParam="768" sParam="" />
+            <Action type="3" message="1701" wParam="0" lParam="1609" sParam="" />
+        </Macro>
