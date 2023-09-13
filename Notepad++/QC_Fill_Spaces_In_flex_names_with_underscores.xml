@@ -14,7 +14,7 @@ And paste it right between the two lines, effectively adding this macro.
 Usage:
 When in a QC, copy the entire content of the flexfile bracket into a new empty file.
 Only the content of the bracket, not the title.
-Which, for the slow ones, means the first "flex" line all the way down to where the last %xxx = xxx line is.
+Which, for the slow ones, means the first "defaultflex" line all the way down to where the last %xxx = xxx line is.
 Run this macro on that file and your spaces in flex names will be swapped to underscores.
 
 Note:
