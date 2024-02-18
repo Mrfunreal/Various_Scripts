@@ -1,4 +1,4 @@
-#This Python script packs multi chunck VPK files four Source 1 Engine. 
+#This Python script packs multi chunck VPK files four Source 1 Engine. (Tested on Python 3.8.0)
 #Usage:
 # 1. Put this python script in the ROOT folder of your game (Or a Mods folder, if you're modding a game like L4D1 or Portal 2)
 # 2. change the vpk_path to whatever your game uses.
