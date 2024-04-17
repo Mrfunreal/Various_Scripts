@@ -1,14 +1,14 @@
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-::	This bat file swaps the pak01_dir.vpk files from the original to a modified one.													::
-::	For example when you modified all .res files in the vpk to be a "rez". You can't play online unless you use default pak01_dir.vpk.	::
-::																																		::
-::	Usage: Make a copy of ALL default pak01_dir.vpk files and rename them to "pak01_dir.vpk.Bak" Just adding a .bak.					::
-::	Do whatever modifications you want to the one you haven't renamed yet.																::
-::																																		::
-::	Set the "Gamepath" on line 13 to where your Left4dead2.exe is located																::
-::	Running this wile will check whether vpk.custom or vpk.bak is exists .																::
-::	If Vpk.Custom exists, it means the default packs are used. So it'll swap to using the custom ones.									::
-::	If Vpk.Bak exists, You're currently using the custom ones, so it'll swich back to default.											::
+::	This bat file swaps the pak01_dir.vpk files from the original to a modified one.
+::	For example when you modified all .res files in the vpk to be a "rez". You can't play online unless you use default pak01_dir.vpk.
+::
+::	Usage: Make a copy of ALL default pak01_dir.vpk files and rename them to "pak01_dir.vpk.Bak" Just adding a .bak.
+::	Do whatever modifications you want to the one you haven't renamed yet.
+::
+::	Set the "Gamepath" on line 13 to where your Left4dead2.exe is located
+::	Running this wile will check whether vpk.custom or vpk.bak is exists .
+::	If Vpk.Custom exists, it means the default packs are used. So it'll swap to using the custom ones.
+::	If Vpk.Bak exists, You're currently using the custom ones, so it'll swich back to default.
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
  SET Gamepath=D:\Programme\Steam\steamapps\common\Left 4 Dead 2
 
