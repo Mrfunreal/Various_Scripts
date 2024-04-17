@@ -11,28 +11,28 @@
 ::	If Vpk.Bak exists, You're currently using the custom ones, so it'll swich back to default.											::
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
  SET Gamepath=D:\Programme\Steam\steamapps\common\Left 4 Dead 2
- 
+
 cls
 @echo off
 :start
-if exist "%Gamepath%\left4dead2\pak01_dir.vpk.custom"	Goto LoadEdit 
+if exist "%Gamepath%\left4dead2\pak01_dir.vpk.custom"	Goto LoadEdit
 if exist "%Gamepath%\left4dead2\pak01_dir.vpk.bak"		Goto LoadOrig
 
-:LoadOrig 
+:LoadOrig
 echo Loading Default Pak01_dir.vpk...
 ::Rename the MODIFIED pack to vpk.custom, to let us know they're modded.
 ren  "%Gamepath%\left4dead2\pak01_dir.vpk"				pak01_dir.vpk.custom
 ren  "%Gamepath%\left4dead2_dlc1\pak01_dir.vpk"			pak01_dir.vpk.custom
-ren  "%Gamepath%\left4dead2_dlc2\pak01_dir.vpk"    		pak01_dir.vpk.custom
-ren  "%Gamepath%\left4dead2_dlc3\pak01_dir.vpk"    		pak01_dir.vpk.custom
-ren  "%Gamepath%\update\pak01_dir.vpk"             		pak01_dir.vpk.custom
+ren  "%Gamepath%\left4dead2_dlc2\pak01_dir.vpk"			pak01_dir.vpk.custom
+ren  "%Gamepath%\left4dead2_dlc3\pak01_dir.vpk"			pak01_dir.vpk.custom
+ren  "%Gamepath%\update\pak01_dir.vpk"					pak01_dir.vpk.custom
 timeout /t 1 /nobreak >nul
-::Renaming the ORIGINAL from vpk.bak to vpk.	
+::Renaming the ORIGINAL from vpk.bak to vpk.
 ren  "%Gamepath%\left4dead2\pak01_dir.vpk.bak"			pak01_dir.vpk
 ren  "%Gamepath%\left4dead2_dlc1\pak01_dir.vpk.bak"		pak01_dir.vpk
-ren  "%Gamepath%\left4dead2_dlc2\pak01_dir.vpk.bak" 	pak01_dir.vpk
-ren  "%Gamepath%\left4dead2_dlc3\pak01_dir.vpk.bak" 	pak01_dir.vpk
-ren  "%Gamepath%\update\pak01_dir.vpk.bak"          	pak01_dir.vpk
+ren  "%Gamepath%\left4dead2_dlc2\pak01_dir.vpk.bak"		pak01_dir.vpk
+ren  "%Gamepath%\left4dead2_dlc3\pak01_dir.vpk.bak"		pak01_dir.vpk
+ren  "%Gamepath%\update\pak01_dir.vpk.bak"				pak01_dir.vpk
 echo [32mDefault Pak01_dir.vpk loaded
 timeout /t 2 /nobreak >nul
 goto end
@@ -42,24 +42,18 @@ echo Loading Modified Pak01_dir.vpk...
 ::Renames the ORIGINAL to backup
 ren  "%Gamepath%\left4dead2\pak01_dir.vpk"				pak01_dir.vpk.Bak
 ren  "%Gamepath%\left4dead2_dlc1\pak01_dir.vpk"			pak01_dir.vpk.Bak
-ren  "%Gamepath%\left4dead2_dlc2\pak01_dir.vpk"    		pak01_dir.vpk.Bak
-ren  "%Gamepath%\left4dead2_dlc3\pak01_dir.vpk"    		pak01_dir.vpk.Bak
-ren  "%Gamepath%\update\pak01_dir.vpk"             		pak01_dir.vpk.Bak
+ren  "%Gamepath%\left4dead2_dlc2\pak01_dir.vpk"			pak01_dir.vpk.Bak
+ren  "%Gamepath%\left4dead2_dlc3\pak01_dir.vpk"			pak01_dir.vpk.Bak
+ren  "%Gamepath%\update\pak01_dir.vpk"					pak01_dir.vpk.Bak
 timeout /t 1 /nobreak >nul
 ::Renames the MODIFIED from unreadable, to readable
 ren  "%Gamepath%\left4dead2\pak01_dir.vpk.custom"		pak01_dir.vpk
-ren  "%Gamepath%\left4dead2_dlc1\pak01_dir.vpk.custom" 	pak01_dir.vpk
-ren  "%Gamepath%\left4dead2_dlc2\pak01_dir.vpk.custom" 	pak01_dir.vpk
-ren  "%Gamepath%\left4dead2_dlc3\pak01_dir.vpk.custom" 	pak01_dir.vpk
-ren  "%Gamepath%\update\pak01_dir.vpk.custom"          	pak01_dir.vpk
+ren  "%Gamepath%\left4dead2_dlc1\pak01_dir.vpk.custom"	pak01_dir.vpk
+ren  "%Gamepath%\left4dead2_dlc2\pak01_dir.vpk.custom"	pak01_dir.vpk
+ren  "%Gamepath%\left4dead2_dlc3\pak01_dir.vpk.custom"	pak01_dir.vpk
+ren  "%Gamepath%\update\pak01_dir.vpk.custom"			pak01_dir.vpk
 echo [33mModified Pak01_dir.vpk loaded
 timeout /t 2 /nobreak >nul
 goto end
-
-:error
-echo Sum Ting Wong
-echo Wi Tu Lo
-echo Ho Lee Fuk
-echo Bang Ding Ow
 
 :end
