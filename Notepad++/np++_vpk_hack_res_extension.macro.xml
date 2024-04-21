@@ -1,0 +1,16 @@
+<!-- This NP++ macro was made by Urik. 
+Copypaste it into your Np++ macro file, which is usually found at %AppData%\Notepad++\shortcuts.xml -->
+<Macro name="vpk_hack_res_extension" Ctrl="no" Alt="no" Shift="no" Key="0">
+    <Action type="3" message="1700" wParam="0" lParam="0" sParam="" />
+    <Action type="3" message="1601" wParam="0" lParam="0" sParam="\x00res\x00" />
+    <Action type="3" message="1625" wParam="0" lParam="2" sParam="" />
+    <Action type="3" message="1702" wParam="0" lParam="770" sParam="" />
+    <Action type="3" message="1701" wParam="0" lParam="1" sParam="" />
+    <Action type="0" message="2304" wParam="0" lParam="0" sParam="" />
+    <Action type="0" message="2306" wParam="0" lParam="0" sParam="" />
+    <Action type="0" message="2306" wParam="0" lParam="0" sParam="" />
+    <Action type="0" message="2306" wParam="0" lParam="0" sParam="" />
+    <Action type="0" message="2307" wParam="0" lParam="0" sParam="" />
+    <Action type="1" message="2170" wParam="0" lParam="0" sParam="x" />
+    <Action type="2" message="0" wParam="41006" lParam="0" sParam="" />
+</Macro>
