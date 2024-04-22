@@ -3,6 +3,12 @@
 
 @echo off
 ::deleting all but .res and .bat
-for /f "delims=" %%F in ('dir /b /a-d ^| findstr /vile ".res .bat"') do del "%%F"
+for /r %%F in (*) do (
+    if not "%%~xF" == ".res" (
+        if not "%%~xF" == ".bat" (
+            del "%%F"
+        )
+    )
+)
 ::deleting all empty folders.
 for /f "delims=|" %%a in ('dir/b/s/ad-s-l^|sort/r') do rd "%%a" 2>nul
