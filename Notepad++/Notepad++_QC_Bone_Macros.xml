@@ -1,0 +1,77 @@
+<!--
+Open the file %AppData%\Notepad++\shortcuts.xml
+
+At the top somewhere, you got these two lines:
+   </InternalCommands>
+    <Macros>
+
+Paste the lines below this info block underneath that <macros> line.
+
+Usage: 
+1. Open any SMD file
+2. Copy the lines at the top that list the bone names INTO A NEW EMPTY FILE
+3. Run either of these macros in that new file, to get either bonemerge or weightlist lines for your qc file.
+-->
+
+        <Macro name="QC: Bone to Weightlist" Ctrl="no" Alt="no" Shift="no" Key="0">
+            <Action type="3" message="1700" wParam="0" lParam="0" sParam="" />
+            <Action type="3" message="1601" wParam="0" lParam="0" sParam='^\s*\d+\s*&quot;(.+)&quot;\s*-?\d+\s*$' />
+            <Action type="3" message="1625" wParam="0" lParam="2" sParam="" />
+            <Action type="3" message="1602" wParam="0" lParam="0" sParam='(&quot;\1&quot; 0)' />
+            <Action type="3" message="1702" wParam="0" lParam="768" sParam="" />
+            <Action type="3" message="1701" wParam="0" lParam="1609" sParam="" />
+            <Action type="0" message="2322" wParam="0" lParam="0" sParam="" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="
+" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="
+" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="}" />
+            <Action type="0" message="2320" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2320" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2302" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2302" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2302" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2302" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2302" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2302" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2302" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2302" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2302" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2302" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2302" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2302" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2302" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2302" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2302" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2302" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2302" wParam="0" lParam="0" sParam="" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="$" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="w" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="e" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="i" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="g" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="h" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="t" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="l" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="i" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="s" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="t" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam=" " />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="x" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="x" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="x" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam=" " />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="{" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="
+" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="
+" />
+        </Macro>
+		        <Macro name="QC: Bone to Bonemerge" Ctrl="no" Alt="no" Shift="no" Key="0">
+            <Action type="3" message="1700" wParam="0" lParam="0" sParam="" />
+            <Action type="3" message="1601" wParam="0" lParam="0" sParam='^\s*\d+\s*&quot;(.+)&quot;\s*-?\d+\s*$' />
+            <Action type="3" message="1625" wParam="0" lParam="2" sParam="" />
+            <Action type="3" message="1602" wParam="0" lParam="0" sParam='$bonemerge &quot;\1&quot;' />
+            <Action type="3" message="1702" wParam="0" lParam="768" sParam="" />
+            <Action type="3" message="1701" wParam="0" lParam="1609" sParam="" />
+        </Macro>
