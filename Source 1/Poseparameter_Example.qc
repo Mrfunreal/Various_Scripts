@@ -1,17 +1,6 @@
 $ModelName	"MrFunreal/props_pose\pose_truck.mdl"
-$BodyGroup	"Truck Team Skin"
-{
-	studio 	"Neutral.smd"
-	studio 	"BLU.smd"
-	studio 	"RED.smd"
-}
-$BodyGroup	"Truck Bed"
-{
-	studio 	"Truckbed.smd"
-	studio 	"rail_short.smd"
-	studio 	"rail_tall.smd"
-	blank
-}
+$model body1	"Neutral.smd"
+$model body2	"Truckbed.smd"
 
 $SurfaceProp "metal"
 $Contents "solid"
