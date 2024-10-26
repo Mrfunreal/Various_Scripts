@@ -4,6 +4,7 @@ $poseparameter wheels	-180 180 loop 360	//Loops one pose parameter.
 $poseparameter wheels_a		 0 1	            //Toggles from one pose to another
 $poseparameter bed		 0 1	            //Toggles from one pose to another
 $poseparameter steer	-1 1 	            //Goes between two opposite frames. like left/neutral/right, up/neutral/down
+
 //-- animations -------------
 $animation 	a_idle 			"Neutral"		//Idle sequence. Use your model's smd. (or any of the models you got)
 
@@ -20,6 +21,7 @@ $animation 	wheels_4 		anims/truck_anim frames 4 4 weightlist "wheels"	subtract 
 
 $animation 	bed_0 			anims/truck_anim frames 0 0 weightlist "bed"	subtract a_idle 0 //idle
 $animation 	bed_1 			anims/truck_anim frames 1 1 weightlist "bed"	subtract a_idle 0 //up
+
 //-- sequences -------------
 $sequence 	0_Idle			a_idle
 
@@ -27,13 +29,6 @@ $sequence 	steer 			{ steer_0 	steer_1 	steer_2								}	blendwidth 3 blend "ste
 $sequence 	wheel_all 		{ wheels_0	wheels_1	wheels_2	wheels_3	wheels_4	}	blendwidth 5 blend "wheels"		-180 180	delta autoplay hidden
 $sequence 	wheel_autoroll	{ wheels_0	wheels_auto										}	blendwidth 2 blend "wheels_a"	0 1			delta autoplay hidden
 $sequence 	bed 			{ bed_0		bed_1 											}	blendwidth 2 blend "bed"		0 1 		delta autoplay hidden
-
-//-- collisionmodel -------------
-$collisionmodel truck_phy {
-$concave
-$mass 800.0
-$inertia 1.00
-}
 
 
 
