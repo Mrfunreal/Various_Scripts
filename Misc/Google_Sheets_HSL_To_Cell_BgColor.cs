@@ -1,3 +1,4 @@
+// Written by MrFunreal
 // this script reads the color values of a HSL table in a google sheets and calculates it to rgb, to which to tint the cells K and L
 // the first number, hue, is multiplied by 3.6, for the weird system that forza uses to work
 // in forza, all color sliders are 0.00-1.00. But Hue would need 0-360. hence the multiplication to get a value like 0.53 to 190.8
