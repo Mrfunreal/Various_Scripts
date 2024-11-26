@@ -14,13 +14,13 @@ cls
 	::Which subfolder of the above mentioned folder the maps will go to. Default is "left4dead2"
 	::WARNING: THIS FOLDER REQUIRES A GAMEINFO! THIS GAMEINFO WILL ALSO NEED TO POINT TO CUSTOM CONTENT!!!
 	::WARNING: MAKE SURE THIS STRING DOES NOT END WITH A SPACE!
-	SET Game_subfolder_name=!maps
+	SET Game_subfolder_name=left4dead2
 	
 	::VMF Location and name, without extension. Add more maps or locations if you want, modify this file accordingly
 	::Once a VMF is compiled, it will do the next listed VMF. If no VMF's are listed, the compile will end.
-	SET VMF_Location=F:\Modding\L4D2_Mapping\CSGO_MAPS\office_summer
-	SET VMF1_Name=Office_l4d1
-	SET VMF2_name=Office_l4d2
+	SET VMF_Location=F:\Modding\L4D1_Mapping\the last stand
+	SET VMF1_Name=c14m1_junkyard_l4d
+	SET VMF2_name=
 	SET VMF3_name=
 	SET VMF4_name=
 	SET VMF5_name=
@@ -31,19 +31,20 @@ cls
 	SET VMF10_name=
 	
 :: COMPILE SETTINGS. Work with comments to define which settings you would like to use.
+:: Currently uses "Hdr Fast preset" as it is not commented out.
 :: VBSP options https://developer.valvesoftware.com/wiki/VBSP
 :: VVIS options https://developer.valvesoftware.com/wiki/VVIS
 :: VRAD options https://developer.valvesoftware.com/wiki/VRAD	
 
 	::HDR FINAL PRESET
-	SET vbsp_setting=-threads 22
-	SET vvis_setting=-threads 22
-	SET vrad_Setting=-threads 22 -hdr -TextureShadows -staticproplighting -StaticPropPolys -final
+::	SET vbsp_setting=-threads 22
+::	SET vvis_setting=-threads 22
+::	SET vrad_Setting=-threads 22 -hdr -TextureShadows -staticproplighting -StaticPropPolys -final
 	
 	::HDR FAST PRESET
-::	SET vbsp_setting=-threads 22
-::	SET vvis_setting=-threads 22 -fast
-::	SET vrad_Setting=-threads 22 -hdr -textureshadows -StaticPropLighting -StaticPropPolys	
+	SET vbsp_setting=-threads 22
+	SET vvis_setting=-threads 22 -fast
+	SET vrad_Setting=-threads 22 -hdr -textureshadows -StaticPropLighting -StaticPropPolys	
 
 	::DIRTY FAST PRESET
 ::	SET vbsp_setting=-threads 22 
