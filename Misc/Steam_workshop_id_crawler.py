@@ -1,5 +1,8 @@
 # This python script crawls the steam workshop addon page for the addon name, if all you got is the addon ID.
 # Simply copy the id's from your addonlist or whatever in here. 
+# REQUIRES BEAUTIFULSOUP4 AND REQUESTS TO BE INSTALLED
+# pip install requests beautifulsoup4
+
 
 import requests
 from bs4 import BeautifulSoup
