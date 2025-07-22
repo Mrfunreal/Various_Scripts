@@ -3,7 +3,6 @@
 # REQUIRES BEAUTIFULSOUP4 AND REQUESTS TO BE INSTALLED
 # pip install requests beautifulsoup4
 
-
 import requests
 from bs4 import BeautifulSoup
 
@@ -39,5 +38,5 @@ def get_mod_title(mod_id):
 with open(output_file, "w", encoding="utf-8") as file:
     for mod_id in mod_ids:
         title = get_mod_title(mod_id)
-        file.write(f"{title} - {mod_id}\n")
-        print(f"{title} - {mod_id}")  # Also print to console
+        file.write(f"{mod_id} - {title}\n")
+        print(f"{mod_id} - {title}")  # Also print to console
