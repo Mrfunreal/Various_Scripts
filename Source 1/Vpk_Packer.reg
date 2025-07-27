@@ -1,0 +1,51 @@
+Windows Registry Editor Version 5.00
+; Without this line up here at the top, it won't work. DO NOT FORGET THIS!!!!!!!
+
+; !EITHER DOWNLOAD THIS FILE OR COPY ALL OF ITS TEXT INTO A TEXT FILE ENDING IN .reg!
+; !! MUST NOT BE A TXT.REG !!
+
+;Notes: 
+; Do not forget to pick your own hard drive letters.
+; There's multiple version of vpk.exe. Not all are the same. You need multiple entries if you want to pack both types.
+; But even then, there are differences even between V1 and V2 vpk. As in, L4d1 and L4d2 are both V1, but L4d2's vpk won't work in L4D1.
+; Games whith version 1 VPK:
+;    Alien Swarm, Dota 2, Left 4 Dead, Left 4 Dead 2, Portal 2, Portal Stories: Mel, Source Filmmaker
+; Games whith version 2 VPK:
+;    Counter-Strike: Global Offensive, Counter-Strike: Source, Day of Defeat: Source, Half-Life: Source, Half-Life 2, Half-Life 2: Deathmatch, Portal, Team Fortress 2
+
+; If you do want multiple classes for types or games, change the "ToVPK2" to "ToVPK3" .Or a game name like "ToVPKPortal2".
+; Then also change all the lines on which "Text shown" is visible.
+; Running a Registry file with different vpk types, but not chaniging the ToVPK causes it to overwrite the existing entries with new ones.
+
+; About icons!
+; All lines with "Icon used" define the .exe from which the icons are to be pulled. 
+; In this file, they're from the SDKLauncher.exe Icon number 0.
+; if you want, you could use the game executable, any .dll, or your own selfmade .ico file(s).
+; If you don't know what index number an icon inside a dll is, use something like "Resource hacker" to drag the exe or dll onto it. It'll show you.
+; But don't forget to use double \\ for the paths.
+
+; --------------------------------------------------------------- VPK PACKING (Right Click Folder) ---------------------------------------------------------------
+[HKEY_CLASSES_ROOT\Directory\shell\toVPK2]                                                ;This one is the visual for right clicking a folder 
+@="Pack VPK for L4D2 (Max 290MB)"                                                         ;Text shown.
+"Icon"="D:\\Programme\\Steam\\steamapps\\common\\Left 4 Dead 2\\bin\\SDKLauncher.exe,0"   ;Icon used. - CHANGE THE PATHS TO YOUR OWN HARD DRIVE!!
+
+[HKEY_CLASSES_ROOT\Directory\shell\toVPK2\command]                                        ;This here is the actual command to pack files.
+@="D:\\Programme\\Steam\\SteamApps\\common\\left 4 dead 2\\bin\\vpk.exe \"%1\""           ;CHANGE THE PATHS TO YOUR OWN HARD DRIVE!!
+
+; --------------------------------------------------------------- VPK PACKING (From within a folder) ------------------------------------------------------------
+[HKEY_CLASSES_ROOT\Directory\Background\shell\toVPK2]                                     ;This one is the visual for right clicking INSIDE a folder 
+@="Pack VPK for L4D2 (Max 290MB)"                                                         ;Text shown.
+"Icon"="D:\\Programme\\Steam\\steamapps\\common\\Left 4 Dead 2\\bin\\SDKLauncher.exe,0"   ;Icon used. - CHANGE THE PATHS TO YOUR OWN HARD DRIVE!!
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\toVPK2\command]                             ;This here is the actual command to pack files.
+@="D:\\Programme\\Steam\\SteamApps\\common\\left 4 dead 2\\bin\\vpk.exe \"%v\""           ;CHANGE THE PATHS TO YOUR OWN HARD DRIVE!!
+
+; -------------------------------------------------------------- VPK UNPACKING --------------------------------------------------------------
+[HKEY_CURRENT_USER\Software\Classes\SystemFileAssociations\.vpk\shell\Unpack]             ;This one is the visual for right clicking a vpk file.
+@="Unpack"                                                                                ;Text shown.
+
+[HKEY_CURRENT_USER\Software\Classes\SystemFileAssociations\.vpk\shell\Unpack\command]     ;This here is the actual command to unpack files.
+@="D:\\Programme\\Steam\\steamapps\\common\\Left 4 Dead 2\\bin\\vpk.exe\" "%1\""          ;CHANGE THE PATHS TO YOUR OWN HARD DRIVE!!
+
+[HKEY_CURRENT_USER\Software\Classes\SystemFileAssociations\.vpk\shell\Unpack]
+"Icon"="D:\\Programme\\Steam\\steamapps\\common\\Left 4 Dead 2\\bin\\SDKLauncher.exe,0"   ;Icon used. - CHANGE THE PATHS TO YOUR OWN HARD DRIVE!!
