@@ -1,7 +1,7 @@
 Windows Registry Editor Version 5.00
-; Without this line up here at the top, it won't work. DO NOT FORGET THIS!!!!!!!
+;Do not forget the header at the top. Without this, windows doesn't know what the hell to do.
 
-; !EITHER DOWNLOAD THIS FILE OR COPY ALL OF ITS TEXT INTO A TEXT FILE ENDING IN .reg!
+; !EITHER DOWNLOAD THIS ENTIRE FILE OR COPY ALL OF ITS TEXT INTO A TEXT FILE ENDING IN .reg!
 ; !! MUST NOT BE A TXT.REG !!
 
 ;Notes: 
