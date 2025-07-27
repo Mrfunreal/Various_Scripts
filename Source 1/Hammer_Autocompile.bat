@@ -3,6 +3,7 @@ cls
 ::	This is an autocompiler bat file for source engine.
 ::	Instead of using hammer to compile one map at a time, you can compile multiple automatically while hammer isn't needed.
 ::	Save this .bat file anywhere you want, define the SET commands in VARIABLES, pick compile settings and run this file.
+::	If you make a shortcut to this bat, you can even change the icon if you want.
 ::---------------------------------------------------------------VARIABLES---------------------------------------------------------------
 ::	Where the game executable is.
 SET	Game_path=D:\programme\steam\steamapps\common\left 4 dead 2
