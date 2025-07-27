@@ -24,7 +24,7 @@ Windows Registry Editor Version 5.00
 ; If you don't know what index number an icon inside a dll is, use something like "Resource hacker" to drag the exe or dll onto it. It'll show you.
 ; But don't forget to use double \\ for the paths.
 
-; --------------------------------------------------------------- VPK PACKING (Right Click Folder) ---------------------------------------------------------------
+; --------------------------------------------------------------- VPK PACKING (Right Click Folder) --------------------------------------------------------------
 [HKEY_CLASSES_ROOT\Directory\shell\toVPK2]                                                ;This one is the visual for right clicking a folder 
 @="Pack VPK for L4D2 (Max 290MB)"                                                         ;Text shown.
 "Icon"="D:\\Programme\\Steam\\steamapps\\common\\Left 4 Dead 2\\bin\\SDKLauncher.exe,0"   ;Icon used. - CHANGE THE PATHS TO YOUR OWN HARD DRIVE!!
@@ -40,7 +40,7 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\Directory\Background\shell\toVPK2\command]                             ;This here is the actual command to pack files.
 @="D:\\Programme\\Steam\\SteamApps\\common\\left 4 dead 2\\bin\\vpk.exe \"%v\""           ;CHANGE THE PATHS TO YOUR OWN HARD DRIVE!!
 
-; -------------------------------------------------------------- VPK UNPACKING --------------------------------------------------------------
+; --------------------------------------------------------------- VPK UNPACKING ---------------------------------------------------------------------------------
 [HKEY_CURRENT_USER\Software\Classes\SystemFileAssociations\.vpk\shell\Unpack]             ;This one is the visual for right clicking a vpk file.
 @="Unpack"                                                                                ;Text shown.
 
