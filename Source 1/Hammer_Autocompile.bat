@@ -5,12 +5,12 @@ cls
 ::	Save this .bat file anywhere you want, define the SET commands in VARIABLES, pick compile settings and run this file.
 ::---------------------------------------------------------------VARIABLES---------------------------------------------------------------
 ::	Where the game executable is.
-SET Game_path=D:\programme\steam\steamapps\common\left 4 dead 2
+SET	Game_path=D:\programme\steam\steamapps\common\left 4 dead 2
 
 ::	Where the Gameinfo.txt is. Gameinfo is read for custom mounted content. Lights.rad also needs to be here, if you have one.
 ::	Could define custom folder, but the game moves the bsp after compiling cubemaps/stringtables.
 ::	Using the base folder is less confusing, as it won't force stale maps to be loaded.
-SET Gameinfo_path=left4dead2
+SET	Gameinfo_path=left4dead2
 
 ::	Where your VMF files are.
 SET	VMF_Location=F:\Modding\L4D2_Mapping\TUMTaRA\!SOURCE
