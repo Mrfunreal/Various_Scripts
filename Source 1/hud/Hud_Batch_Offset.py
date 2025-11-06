@@ -1,6 +1,6 @@
 # This script adjusts all Xypos and Ypos values of a hud's .res file.
 # Useful for when you want to move multiple hud items all at once.
-# Create a file named "HUD_Original.txt" and paste the section of your hud you want to alter.
+# Create a file named "HUD_Original.txt" in the same folder as this script, then paste the section of your hud you want to alter.
 # Run this python script and then decide the offsets you want to modify all values by.
 # After the script is done, it will create "HUD_Adjusted.txt" containing your modified hud, ready to be pasted back into the script.
 
