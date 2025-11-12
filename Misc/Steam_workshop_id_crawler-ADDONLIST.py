@@ -1,6 +1,8 @@
 # This python script lets you check the names of all addons in your addonlist.
-# Change the ADDONLIST_PATH on line 13 to your own directory
+# Change the ADDONLIST_PATH on line 15 to your own directory
 # This is only needed for debugging mods, getting a list of all mods you have and checkign one after another
+# REQUIRES BEAUTIFULSOUP4 AND REQUESTS TO BE INSTALLED
+# pip install requests beautifulsoup4
 
 import requests
 from bs4 import BeautifulSoup
