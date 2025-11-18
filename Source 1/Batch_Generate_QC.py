@@ -1,4 +1,5 @@
-# This python script batch generates QC files based on a prefab and DMX/SMD/OBJ names.
+# This python script batch generates QC files based on a prefab and DMX/SMD/OBJ names. 
+# It won't create new ones if you already have qc files of the same name
 #-----------------------------------------------------------------------------------------------------------------------------
 # Usage: 
 # 1. Place this script into the folder where your QC's should be generated to.
