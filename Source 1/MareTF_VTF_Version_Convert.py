@@ -1,5 +1,6 @@
 #=========================================================================================================================================
 #	This Python script makes use of MareTF to change VTF Version of many files at once.
+#	You obviously also need to havge python installed. Duh.
 #	Dedicated unitaskers like "VtfVer" and "Easy-VTF-Converter" exist. So why use MareTF? 
 #	Because MareTF is a Multitasker that does a whole lot more than just version changes. 
 #	Besides, "VtfVer" prints endless errors unless you remember to tick a box every time, and "Easy-VTF-Converter" only works on Win10.
